@@ -82,6 +82,7 @@ body.activated footer{
   position: relative;
   margin: 0 1vh;
   color: #593092;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 .content>ul>li.active>section{
