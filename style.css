@@ -23,6 +23,7 @@ header {
   height: 50vh;
 }
 .content{
+  visibility: hidden;
   height: 0;
   margin-bottom: 0;
   margin-top: 0;
@@ -56,6 +57,7 @@ body.activated header {
   width: auto;
 }
 body.activated .content{
+  visibility: visible;
   height: 65vh;
   margin-bottom: 25vh;
   margin-top: 5vh;
