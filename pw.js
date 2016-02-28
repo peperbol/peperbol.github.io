@@ -1,11 +1,26 @@
 var sly;
+var urlparams;
 var activate = function(e) {
   $("body").addClass("activated");
-  sly.reload();
+  $(".content>ul>li>div").removeClass("expanded");
+  sly.set("scrollBy", 1);
+  sly.set("scrollSource", $("html"));
 };
-$('html').on("keypress click mousewheel DOMMouseScroll MozMousePixelScroll", activate);
 
+var expand = function(e) {
+  $(e.target).parent().addClass("expanded");
+  sly.set("scrollBy", 0);
+  sly.set("scrollSource", null);
+};
 $(document).on('ready', function(e) {
+  urlparams = location.search.substr(1).split("&").reduce( function( obj, val ){
+    if( !val ) return obj;
+    var pair = val.split("=");
+    obj[pair[0]] = pair[1];
+    return obj;
+  }, {} );
+  $(".content>ul>li>button").click(expand);
+
   sly = new Sly($(".content"), {
     slidee: ".content>ul", // Selector, DOM element, or jQuery object with DOM element representing SLIDEE.
     horizontal: true, // Switch to horizontal mode.
@@ -18,8 +33,8 @@ $(document).on('ready', function(e) {
     activateMiddle: true, // Always activate the item in the middle of the FRAME. forceCentered only.
 
     // Scrolling
-    scrollSource: "html", // Element for catching the mouse wheel scrolling. Default is FRAME.
-    scrollBy: 1 , // Pixels or items to move per one mouse scroll. 0 to disable scrolling.
+    scrollSource: null, // Element for catching the mouse wheel scrolling. Default is FRAME.
+    scrollBy: 0 , // Pixels or items to move per one mouse scroll. 0 to disable scrolling.
     scrollHijack: 300, // Milliseconds since last wheel event after which it is acceptable to hijack global scroll.
     scrollTrap: true, // Don't bubble scrolling when hitting scrolling limits.
 
@@ -74,12 +89,36 @@ $(document).on('ready', function(e) {
     activeClass: 'active', // Class for active items and pages.
     disabledClass: 'disabled' // Class for disabled navigation elements.
   }).init();
-  console.log(navigator.platform.toUpperCase().indexOf('MAC'));
+
+  if(urlparams.page && urlparams.page != "intro" ){
+    sly.activate($("#"+urlparams.page));
+    setTimeout(activate,1000);
+  }else{
+
+    $('html').one("keypress click mousewheel DOMMouseScroll MozMousePixelScroll", activate);
+  }
   sly.reload();
+
   $(".btn-contact").on("click", function(e) {
-    sly.activate(document.getElementById("contact"));
+    console.log(sly.getIndex($("#contact")));
+    sly.activate($("#contact"));
   });
 
+  sly.on("active",function(e,i) {
+    urlparams.page = sly.items[i].el.id;
+    try {
+      window.history.replaceState(sly.items[i].el.id, document.title, "?"+ $.param( urlparams ));
+    } catch (e) {
+
+    }
+  });
+
+  $(".content>ul>li>button").on("click", function(e) {
+    $(e.delegateTarget).siblings(".process").addClass("expanded");
+  });
+  $(".content>ul>li>.process>.bg").on("click", function(e) {
+    $(e.delegateTarget).parent().removeClass("expanded");
+  });
 });
 $(window).resize(function(e) {
   sly.reload();
