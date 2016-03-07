@@ -302,6 +302,46 @@ font-weight: bold;
   bottom: 0;
   right: 0;
 }
+#intro .head img{
+  height: 0.8em;
+  display: inline;
+  width: auto;
+}
+#intro .head{
+  text-align: center;
+  font-size: 8em;
+  padding-right: 0.3em;
+  margin-bottom: -0.2em;
+  font-weight: bolder;
+  font-family: 'Amatic SC',sans-serif;
+}
+#intro .head~ul{
+  padding-left: 0;
+  list-style: none;
+}
+#intro .head~ul li{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-family: 'Amatic SC',sans-serif;
+  margin-bottom: 0.5em;
+}
+#intro .head~ul li a:hover{
+  text-decoration: underline;
+}
+
+#intro .head~ul li::before,
+#intro .head~ul li::after{
+  content: "-";
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+}
+#intro .head~ul li::before{
+  margin-right: 0.25em;
+}
+#intro .head~ul li::after{
+  margin-left: 0.25em;
+}
 #skills>section{
   width: 30vh
 }
