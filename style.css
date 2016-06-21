@@ -54,6 +54,7 @@ header>img {
   width: auto;
   margin: 0 auto;
   display: block;
+  cursor: pointer;
 }
 body.activated header {
   margin-top: 5vh;
