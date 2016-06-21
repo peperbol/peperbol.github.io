@@ -99,11 +99,13 @@ $(document).on('ready', function(e) {
   }
   sly.reload();
 
+  $("header>img").on("click", function(e) {
+
+    sly.activate($("#intro"));
+  });
   $(".btn-contact").on("click", function(e) {
-    console.log(sly.getIndex($("#contact")));
     sly.activate($("#contact"));
   });
-
   sly.on("active",function(e,i) {
     urlparams.page = sly.items[i].el.id;
     try {
