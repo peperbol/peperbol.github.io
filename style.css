@@ -208,8 +208,17 @@ footer>a,
   font-weight: bold;
   cursor: pointer;
   pointer-events: auto;
+  text-decoration: none;
 }
-.fa+span {
+
+footer>a>.fa+*,
+.btn-contact>.fa+*{
+  margin-left: 10px;
+}
+.fa-file-text {
+  font-size: 0.95em;
+}
+.fa+span:not(.show) {
   display: none;
 }
 
