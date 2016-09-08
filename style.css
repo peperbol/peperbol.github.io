@@ -238,7 +238,6 @@ footer>a>.fa+*,
 }
 .content>ul>li h2{
   font-size: 2em;
-  padding: 1vh 2vh 0 2vh;
 }
 .content>ul>li a{
 color: #000;
@@ -268,12 +267,13 @@ font-weight: bold;
 
 }
 
-.content>ul>li p,
-.content>ul>li li {
+.content>ul>li h1,
+.content>ul>li h2
+{
+   padding: 1vh 2vh 0 2vh;
+   margin: 0;
 }
 .content>ul>li p,
-.content>ul>li h1,
-.content>ul>li h2,
 .content>ul>li li,
 .content>ul>li i:not(.fa),
 .content>ul>li aside  {
@@ -302,6 +302,48 @@ font-weight: bold;
   bottom: 0;
 }
 
+.tag::before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -1vh;
+  left: 0;
+  border-left: 1.1vh solid transparent;
+	border-bottom: 1.1vh solid #492082;
+  z-index: -5;
+}
+
+.tag::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 0;
+  right: -0.9vh;
+  border-right: 1vh solid transparent;
+	border-bottom: 1.75vh solid #593092;
+	border-top: 1.75vh solid #593092;
+}
+.tag {
+  background-color: #593092;
+  color: #a9ce6f;
+  margin-left: -1vh;
+  margin-top: 0;
+  display: inline-block;
+  padding: 0 1.5vh 0 2vh;
+  transform: translate(0,-1.1vh);
+  font-size: 2.5vh;
+  position: absolute;
+  box-sizing: border-box;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.tag+*{
+  padding-top: 2.7vh !important;
+}
 
 #intro>section {
     width: 35vh;
