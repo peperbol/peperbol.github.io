@@ -4,12 +4,12 @@ html{
   height: 100%;
   overflow: hidden;
 }
+
 body{
   min-height: 100%;
   margin: 0;
   width: 100%;
 }
-
 
 header {
   margin-top: 10vh;
@@ -33,7 +33,7 @@ header {
   overflow-x: hidden !important;
   overflow-y: visible !important;*/
   padding: 0;
-  font-size: 1.8vh;
+  font-size: 2vh;
 }
 footer {
   display: block;
@@ -57,13 +57,13 @@ header>img {
   cursor: pointer;
 }
 body.activated header {
-  margin-top: 5vh;
-  height: 15vh;
+  margin-top: 2vh;
+  height: 10vh;
   width: auto;
 }
 body.activated .content{
   visibility: visible ;
-  height: 72vh;
+  height: 80vh;
   margin-bottom: 25vh;
   margin-top: 3vh;
 }
@@ -85,14 +85,14 @@ body.activated footer{
 }
 .content>ul>li>section{
   width: 45vh;
-  height: 62vh;
+  height: 71.3vh;
   background-color: #c9d66d;
   box-shadow: 10px 10px 10px rgba(100,110,50,0.4);
   position: relative;
-  margin: 0 1vh;
+  margin: 1vh 2vh 0;
   z-index: 2;
   color: #593092;
-  -webkit-transition: opacity 0.5s;
+  -webkit-transition: opacity 0.5s, margin 0.3s, height 0.3s;
 }
 
 .content>ul>li>section+button{
@@ -117,6 +117,10 @@ body.activated footer{
   margin-top: 0vh;
 }
 
+.content>ul>li.active>section {
+  height: 73.3vh;
+  margin: 0vh auto;
+}
 
 .content>ul>li>section+button span{
   line-height: 2.8vh;
@@ -195,7 +199,7 @@ body.activated footer{
 footer>a,
 .btn-contact {
   background-color: #a9ce6f;
-  padding: 1vh 2vh;
+  padding: 1vh 3vh;
   border: 0.1vh solid #a9ce6f;
   box-shadow: 5px 5px 10px rgba(100,110,50,0.4);
   border-radius: 3vh;
