@@ -2,136 +2,185 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Pepijn Willekens</title>
-  <meta property="og:url" content="http://www.pepijnwillekens.com/" />
-  <meta property="og:type" content="portfolio" />
-  <meta property="og:title" content="Pepijn Willekens' Portfolio" />
-  <meta property="og:description" content="Creative student Multimedia Technology, Indie game Developer, living in Antwerp" />
-  <meta property="og:image" content="http://www.pepijnwillekens.com/img/pw-og-thumbnail.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:type" content="image/png" />
-  <meta name="Description" content="Pepijn Willekens' Portfolio. Creative student Multimedia Technology, Indie game Developer, living in Antwerp" />
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="img/favicon.png">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="js/sly.min.js"></script>
-  <script src="pw.js"></script>
-  <script type="text/javascript">
-    window.smartlook||(function(d) {
-    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
-    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
-    c.charset='utf-8';c.src='//rec.smartlook.com/recorder.js';h.appendChild(c);
-    })(document);
-    smartlook('init', 'dae2f5b8ef62be559c0c13b5e87f5deea1a7764c');
-</script>
+    <meta charset="UTF-8">
+    <title>Pepijn Willekens</title>
+    <meta property="og:url" content="http://www.pepijnwillekens.com/" />
+    <meta property="og:type" content="portfolio" />
+    <meta property="og:title" content="Pepijn Willekens' Portfolio" />
+    <meta property="og:description" content="Creative student Multimedia Technology, Indie game Developer, living in Antwerp" />
+    <meta property="og:image" content="http://www.pepijnwillekens.com/img/pw-og-thumbnail.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="Description" content="Pepijn Willekens' Portfolio. Creative student Multimedia Technology, Indie game Developer, living in Antwerp" />
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:700,400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/sly.min.js"></script>
+    <script src="pw.js"></script>
+    <script type="text/javascript">
+        window.smartlook || (function(d) {
+            var o = smartlook = function() {
+                    o.api.push(arguments)
+                },
+                h = d.getElementsByTagName('head')[0];
+            var c = d.createElement('script');
+            o.api = new Array();
+            c.async = true;
+            c.type = 'text/javascript';
+            c.charset = 'utf-8';
+            c.src = '//rec.smartlook.com/recorder.js';
+            h.appendChild(c);
+        })(document);
+        smartlook('init', 'dae2f5b8ef62be559c0c13b5e87f5deea1a7764c');
+    </script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Person",
+            "name": "Pepijn Willekens",
+            "url":"http://www.pepijnwillekens.com/",
+            "givenName": "Pepijn",
+            "familyName": "Willekens",
+            "affiliation": {
+              "@type": "Organisation",
+              "name": "The House of Indie",
+              "location": {
+                "@type":"PostalAddress",
+                "addressCountry":"Belgium",
+                "addressLocality": "Antwerp",
+              },
+              "url":"http://thehouseofindie.com/"
+            },
+            "address":{
+              "@type":"PostalAddress",
+              "addressCountry":"Belgium",
+              "postalCode": "2640",
+              "streetAddress": "Liersesteenweg 244",
+              "addressLocality": "Mortsel",
+            },
+            "email":"pepijnwillekens@gmail.com",
+            "telephone":"+32498846421",
+            "nationality":{
+              "@type":"Country",
+              "name":"Belgium"
+            },
+            "jobTitle":[
+              "Game developer",
+              "Event organiser"
+              "Programmer",
+              "Web developer"
+            ]
+        }
+    </script>
 </head>
 
 <body>
-  <header>
-    <img src="img/name.png" alt="Pepijn Willekens">
-  </header>
-  <section class="content fade-center">
-    <ul>
-      <li id="intro">
-        <section>
-          <h1>Hey Visitor!</h1>
-          <p>I make games, organise events and do a lot of other things!</p>
-          <p class="head"><img src="img/me-small.png" alt="Pepijn Willekens" >=</p>
-          <ul>
-            <li>From Antwerp, Belgium</li>
-            <li>Still a student</li>
-            <li>Member of <a href="http://thehouseofindie.com/" target="_blank">The House of Indie</a></li>
-          </ul>
+    <header>
+        <img src="img/name.png" alt="Pepijn Willekens">
+    </header>
+    <section class="content fade-center">
+        <ul>
+            <li id="intro">
+                <section>
+                    <h1>Hey Visitor!</h1>
+                    <p>I make games, organise events and do a lot of other things!</p>
+                    <p class="head"><img src="img/me-small.png" alt="Pepijn Willekens">=</p>
+                    <ul>
+                        <li>From Antwerp, Belgium</li>
+                        <li>Still a student</li>
+                        <li>Member of <a href="http://thehouseofindie.com/" target="_blank">The House of Indie</a></li>
+                    </ul>
 
-          <aside class="rightbottomcorner">drag to browse <i class="fa fa-angle-right"></i></aside>
-        </section>
-      </li>
-      <li id="skills">
-        <section>
-          <h1>Skills</h1>
-          <h2>Programming</h2>
-          <ul class="meters">
-            <li class="p80">Unity/C#</li>
-            <li class="p60">.NET/C#</li>
-            <li class="p65">Javascript / Typescript</li>
-            <li class="p60">Python</li>
-            <li class="p85">Html/css</li>
-          </ul>
-          <h2>Other</h2>
-          <ul class="meters">
-            <li class="p65">Usability/UX</li>
-            <li class="p70">Electronics</li>
-            <li class="p25">Graphic Design</li>
-            <li class="p65">Game Design</li>
-            <li class="p50">Web Design</li>
-            <li class="p80">Git</li>
-            <li class="p50">3D Modeling</li>
-          </ul>
-        </section>
-      </li>
-      <li id="mta">
-        <section>
-          <a href="http://multimediatechnology.be/" target="_blank"><img src="img/mta.png" alt="Multimedia Technology - Antwerp LOGO"></a>
-          <div class="tag">Education</div>
-          <h1>Studies Multimedia Technology</h1><i>(2014-2018)</i>
-          <p>I study Multimedia Technology at <a href="http://www.kdg.be/" target="_blank">Karel De Grote</a> in Antwerp. It's a very wide course and includes programming, audio, video, 3D, electronics, User Experience, project management, marketing, ...</p>
-          <aside class="right bottom"><a href="http://multimediatechnology.be/" target="_blank">official site</a></aside>
-        </section>
-      </li>
-      <li id="ggj16">
-        <section>
-          <a href="http://thehouseofindie.com/globalgamejam/2016/" target="_blank"><img src="img/ggj16.jpg" alt="earth from space with start arround it labelde Global Game Jam Antwerp"></a>
-          <div class="tag">Event Organisation</div>
-          <h1>Global Game Jam 2016 Antwerp</h1>
-          <p>In colaboration with <a href="http://thehouseofindie.com/" target="_blank">The House of Indie</a> and <a href="http://atb.design/" target="_blank">Alexandar Barratt</a>, We organised the <a href="http://globalgamejam.org/" target="_blank">Global Game Jam 2016</a> site in Antwerp. We had arround 30 participants on our location. My role was to communicate towards particpants among other things.</p>
-          <aside class="right bottom"><a href="http://thehouseofindie.com/globalgamejam/2016/" target="_blank">official site</a></aside>
-        </section>
-      </li>
-      <li id="ss16">
-        <section>
-          <a href="http://screenshake.be/" target="_blank"><img src="img/ss16.png" alt="logo of screenshake 2016 with beautifull drawings arround it."></a>
-          <div class="tag">Event Organisation</div>
-          <h1>Screenshake 2016</h1>
-          <p><a href="http://thehouseofindie.com/" target="_blank">The House of Indie</a> organised Screenshake 2016, Belgiums only international indie games festival. During the 3-day-event I got the responsability to manage volunteers and lead everything in a good direction.</p>
-          <aside class="right bottom"><a href="http://screenshake.be/" target="_blank">official site</a></aside>
-        </section>
-      </li>
-      <li id="headstart">
-        <section>
-          <a href="http://headstart.institute/" target="_blank"><img src="img/headstart.png" alt="turqoise and pink banner with illustrations of Headstart 2015"></a>
-          <div class="tag">Education</div>
-          <h1>Headstart 2015</h1>
-          <p>I participated at Headstart 2015, an international summerschool for
-            gamedevelopers who want to start their own studio. </p>
-          <p>It was a truly unique experience to be there!</p>
-          <aside class="right bottom"><a href="http://headstart.institute/" target="_blank">official site</a></aside>
-        </section>
-      </li>
-      <li id="stray">
-        <section>
-          <a href="https://peperbol.itch.io/stray" target="_blank"><img src="img/stray.png" alt="Logo of stray: with a small armless human figure, on a white terain with green background and trees"></a>
-          <div class="tag">Game Development</div>
-          <h1>Stray</h1>
-          <p>Stray is a minimalistic atmospheric walkingsimulator. Together with Brandon Rijpert We built this experience over the span of a week. You should play it to have a sense of what it is. The game takes &plusmn; 14 minutes to complete. </p>
-          <aside class="right bottom"><a href="https://peperbol.itch.io/stray" target="_blank">Itch.io</a></aside>
-        </section>
-      </li>
-      <li id="solarclap">
-        <section>
-          <iframe width="100%" height="41%" src="https://www.youtube.com/embed/EMw8prZX0XQ" frameborder="0" allowfullscreen></iframe>
-          <div class="tag">Game Development</div>
-          <h1>Solar Clap</h1>
-          <p>Solar Clap is a 4-player co-op Clapping-rhythm game instalation.</p>
-          <p>I am currently working on Solar Clap with <a href="https://twitter.com/michel_marsman" target="_blank">Michel Marsman</a>. We do this in our free time.</p>
-          <aside class="right bottom"><a href="https://www.facebook.com/SolarClap/" target="_blank">facebook page</a></aside>
-        </section>
+                    <aside class="rightbottomcorner">drag to browse <i class="fa fa-angle-right"></i></aside>
+                </section>
+            </li>
+            <li id="skills">
+                <section>
+                    <h1>Skills</h1>
+                    <h2>Programming</h2>
+                    <ul class="meters">
+                        <li class="p80">Unity/C#</li>
+                        <li class="p60">.NET/C#</li>
+                        <li class="p65">Javascript / Typescript</li>
+                        <li class="p60">Python</li>
+                        <li class="p85">Html/css</li>
+                    </ul>
+                    <h2>Other</h2>
+                    <ul class="meters">
+                        <li class="p65">Usability/UX</li>
+                        <li class="p70">Electronics</li>
+                        <li class="p25">Graphic Design</li>
+                        <li class="p65">Game Design</li>
+                        <li class="p50">Web Design</li>
+                        <li class="p80">Git</li>
+                        <li class="p50">3D Modeling</li>
+                    </ul>
+                </section>
+            </li>
+            <li id="mta">
+                <section>
+                    <a href="http://multimediatechnology.be/" target="_blank"><img src="img/mta.png" alt="Multimedia Technology - Antwerp LOGO"></a>
+                    <div class="tag">Education</div>
+                    <h1>Studies Multimedia Technology</h1><i>(2014-2018)</i>
+                    <p>I study Multimedia Technology at <a href="http://www.kdg.be/" target="_blank">Karel De Grote</a> in Antwerp. It's a very wide course and includes programming, audio, video, 3D, electronics, User Experience, project management, marketing,
+                        ...</p>
+                    <aside class="right bottom"><a href="http://multimediatechnology.be/" target="_blank">official site</a></aside>
+                </section>
+            </li>
+            <li id="ggj16">
+                <section>
+                    <a href="http://thehouseofindie.com/globalgamejam/2016/" target="_blank"><img src="img/ggj16.jpg" alt="earth from space with start arround it labelde Global Game Jam Antwerp"></a>
+                    <div class="tag">Event Organisation</div>
+                    <h1>Global Game Jam 2016 Antwerp</h1>
+                    <p>In colaboration with <a href="http://thehouseofindie.com/" target="_blank">The House of Indie</a> and <a href="http://atb.design/" target="_blank">Alexandar Barratt</a>, We organised the <a href="http://globalgamejam.org/" target="_blank">Global Game Jam 2016</a>                        site in Antwerp. We had arround 30 participants on our location. My role was to communicate towards particpants among other things.</p>
+                    <aside class="right bottom"><a href="http://thehouseofindie.com/globalgamejam/2016/" target="_blank">official site</a></aside>
+                </section>
+            </li>
+            <li id="ss16">
+                <section>
+                    <a href="http://screenshake.be/" target="_blank"><img src="img/ss16.png" alt="logo of screenshake 2016 with beautifull drawings arround it."></a>
+                    <div class="tag">Event Organisation</div>
+                    <h1>Screenshake 2016</h1>
+                    <p><a href="http://thehouseofindie.com/" target="_blank">The House of Indie</a> organised Screenshake 2016, Belgiums only international indie games festival. During the 3-day-event I got the responsability to manage volunteers and lead
+                        everything in a good direction.</p>
+                    <aside class="right bottom"><a href="http://screenshake.be/" target="_blank">official site</a></aside>
+                </section>
+            </li>
+            <li id="headstart">
+                <section>
+                    <a href="http://headstart.institute/" target="_blank"><img src="img/headstart.png" alt="turqoise and pink banner with illustrations of Headstart 2015"></a>
+                    <div class="tag">Education</div>
+                    <h1>Headstart 2015</h1>
+                    <p>I participated at Headstart 2015, an international summerschool for gamedevelopers who want to start their own studio. </p>
+                    <p>It was a truly unique experience to be there!</p>
+                    <aside class="right bottom"><a href="http://headstart.institute/" target="_blank">official site</a></aside>
+                </section>
+            </li>
+            <li id="stray">
+                <section>
+                    <a href="https://peperbol.itch.io/stray" target="_blank"><img src="img/stray.png" alt="Logo of stray: with a small armless human figure, on a white terain with green background and trees"></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Stray</h1>
+                    <p>Stray is a minimalistic atmospheric walkingsimulator. Together with Brandon Rijpert We built this experience over the span of a week. You should play it to have a sense of what it is. The game takes &plusmn; 14 minutes to complete.
+                        </p>
+                    <aside class="right bottom"><a href="https://peperbol.itch.io/stray" target="_blank">Itch.io</a></aside>
+                </section>
+            </li>
+            <li id="solarclap">
+                <section>
+                    <iframe width="100%" height="41%" src="https://www.youtube.com/embed/EMw8prZX0XQ" frameborder="0" allowfullscreen></iframe>
+                    <div class="tag">Game Development</div>
+                    <h1>Solar Clap</h1>
+                    <p>Solar Clap is a 4-player co-op Clapping-rhythm game instalation.</p>
+                    <p>I am currently working on Solar Clap with <a href="https://twitter.com/michel_marsman" target="_blank">Michel Marsman</a>. We do this in our free time.</p>
+                    <aside class="right bottom"><a href="https://www.facebook.com/SolarClap/" target="_blank">facebook page</a></aside>
+                </section>
 
-        <!--
+                <!--
         <button>
           <span>process <i class="fa fa-angle-down"></i></span>
         </button>
@@ -141,171 +190,172 @@
             </section>
         </div>
       -->
-      </li>
-      <li id="GrimeySlug">
-        <section>
-          <iframe width="100%" height="45%" src="https://www.youtube.com/embed/ZLF7GfuOBfk" frameborder="0" allowfullscreen></iframe>
-          <div class="tag">Video Production</div>
-          <h1>Grimey slug takes the morning bus</h1>
-          <p>While organising Global Game Jam 2016 in Antwerp, I also made a stopmotion video with  <a href="https://twitter.com/EsterVanhoutte" target="_blank">Ester Vanhoutte</a>. Since we started late with this, we didn't had the time to put sound on it.
-          </p>
-          <aside class="right bottom"><a href="http://globalgamejam.org/2016/games/grimey-slug-takes-morning-bus" target="_blank">Submition</a></aside>
-        </section>
-      </li>
-      <li id="pdtplanner">
-        <section>
-          <a href="http://www.pepijnwillekens.com/PDTplanner/" target="_blank"><img src="img/pdtplanner.png" alt="The interface of the PDT planner web app"></a>
-          <div class="tag">Web Development</div>
-          <h1>PDT Planner</h1>
-          <p>In the Beglian college system, you can choose when you do which course and scale your studies over more years.</p>
-          <p>I made a web app to plan your program, that takes all restrictions into account. (Dutch)</p>
-          <aside class="right bottom"><a href="http://www.pepijnwillekens.com/PDTplanner/" target="_blank">Web app</a></aside>
-        </section>
+            </li>
+            <li id="GrimeySlug">
+                <section>
+                    <iframe width="100%" height="45%" src="https://www.youtube.com/embed/ZLF7GfuOBfk" frameborder="0" allowfullscreen></iframe>
+                    <div class="tag">Video Production</div>
+                    <h1>Grimey slug takes the morning bus</h1>
+                    <p>While organising Global Game Jam 2016 in Antwerp, I also made a stopmotion video with <a href="https://twitter.com/EsterVanhoutte" target="_blank">Ester Vanhoutte</a>. Since we started late with this, we didn't had the time to put
+                        sound on it.
+                    </p>
+                    <aside class="right bottom"><a href="http://globalgamejam.org/2016/games/grimey-slug-takes-morning-bus" target="_blank">Submition</a></aside>
+                </section>
+            </li>
+            <li id="pdtplanner">
+                <section>
+                    <a href="http://www.pepijnwillekens.com/PDTplanner/" target="_blank"><img src="img/pdtplanner.png" alt="The interface of the PDT planner web app"></a>
+                    <div class="tag">Web Development</div>
+                    <h1>PDT Planner</h1>
+                    <p>In the Beglian college system, you can choose when you do which course and scale your studies over more years.</p>
+                    <p>I made a web app to plan your program, that takes all restrictions into account. (Dutch)</p>
+                    <aside class="right bottom"><a href="http://www.pepijnwillekens.com/PDTplanner/" target="_blank">Web app</a></aside>
+                </section>
 
-      </li>
-      <li id="buildinghorizon">
-        <section>
-          <a href="http://jacobgoldfarb.itch.io/building-horizon" target="_blank"><img src="img/buildinghorizon.png" alt="the earth of building horizon zoomed out with a moody athmosphere"></a>
-          <div class="tag">Game Development</div>
-          <h1>Building horizon</h1>
-          <p>Building horizon is a strategy game where your build tents to spawn troops, smash your head against opponents, and try to destoy the enemy castle. </p>
-          <p>It was made in a spontaneous gamejam with <a href="http://atb.design/" target="_blank">Alexandar Barratt</a> and <a href="https://twitter.com/TangentGuyOP" target="_blank">Jacob Goldfarb</a>.</p>
-          <aside class="right bottom"><a href="http://jacobgoldfarb.itch.io/building-horizon" target="_blank">itch.io</a></aside>
-        </section>
-      </li>
-      <li id="castlevoid">
-        <section>
-          <a href="https://twitter.com/search?q=%23castlevoid" target="_blank"><img src="img/castlevoid.jpg" alt="the earth of building horizon zoomed out with a moody athmosphere"></a>
-          <div class="tag">Game Development</div>
-          <h1>Castle Void</h1>
-          <p>I continued alone on Building horizon, and turned it into an Arcade game that is projected on the ground. I also build an arcade machine for this.</p>
+            </li>
+            <li id="buildinghorizon">
+                <section>
+                    <a href="http://jacobgoldfarb.itch.io/building-horizon" target="_blank"><img src="img/buildinghorizon.png" alt="the earth of building horizon zoomed out with a moody athmosphere"></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Building horizon</h1>
+                    <p>Building horizon is a strategy game where your build tents to spawn troops, smash your head against opponents, and try to destoy the enemy castle. </p>
+                    <p>It was made in a spontaneous gamejam with <a href="http://atb.design/" target="_blank">Alexandar Barratt</a> and <a href="https://twitter.com/TangentGuyOP" target="_blank">Jacob Goldfarb</a>.</p>
+                    <aside class="right bottom"><a href="http://jacobgoldfarb.itch.io/building-horizon" target="_blank">itch.io</a></aside>
+                </section>
+            </li>
+            <li id="castlevoid">
+                <section>
+                    <a href="https://twitter.com/search?q=%23castlevoid" target="_blank"><img src="img/castlevoid.jpg" alt="the earth of building horizon zoomed out with a moody athmosphere"></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Castle Void</h1>
+                    <p>I continued alone on Building horizon, and turned it into an Arcade game that is projected on the ground. I also build an arcade machine for this.</p>
 
-          <aside class="right bottom"><a href="https://twitter.com/search?q=%23castlevoid" target="_blank">development tweets</a></aside>
-        </section>
-      </li>
-      <li id="blinddrivingsimulator">
-        <section>
-          <a href="http://peperbol.itch.io/blind-car-simulator" target="_blank"><img src="img/BlindCarDrivingSimulator.jpg" alt="Jonathan Van Hove sitting in the wooden car structure that is part of the blind cardriving simulator, with headphones on"></a>
-          <div class="tag">Game Development</div>
-          <h1>Blind Car Driving Simulator</h1>
-          <p>During the <a href="https://www.facebook.com/events/1642522169347795/" target="_blank">No Screen Jam</a>, an event where you make a game that doesn't include a screen in 48 hours, We made a Car Driving Simulator where you navigate by the sound
-            of your environment.</p>
-          <aside class="right bottom"><a href="http://peperbol.itch.io/blind-car-simulator" target="_blank">itch.io</a></aside>
-        </section>
-      </li>
-      <li id="jellyfish">
-        <section>
-          <a href="http://intergalacticjellyfish.eu/" target="_blank"><img src="img/IGjellyfish.png" alt="Male with his arm into the Intergalactic Jellyfish box, smiling. With a screen displaying the inside of the box."></a>
-          <div class="tag">Game Development</div>
-          <h1>Intergalactic Jellyfish</h1>
-          <p>At <a href="http://zoomachines.com/" target="_blank">Zoomachines 2015</a>, Me and my team made a game where you put your arm in a box, and you have to feed a monster jellyfish in the other dimension!
-            Your situation only gets worse the more you struggle.</p>
-            <aside class="right bottom"><a href="http://intergalacticjellyfish.eu/" target="_blank">Website</a></aside>
-          </section>
+                    <aside class="right bottom"><a href="https://twitter.com/search?q=%23castlevoid" target="_blank">development tweets</a></aside>
+                </section>
+            </li>
+            <li id="blinddrivingsimulator">
+                <section>
+                    <a href="http://peperbol.itch.io/blind-car-simulator" target="_blank"><img src="img/BlindCarDrivingSimulator.jpg" alt="Jonathan Van Hove sitting in the wooden car structure that is part of the blind cardriving simulator, with headphones on"></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Blind Car Driving Simulator</h1>
+                    <p>During the <a href="https://www.facebook.com/events/1642522169347795/" target="_blank">No Screen Jam</a>, an event where you make a game that doesn't include a screen in 48 hours, We made a Car Driving Simulator where you navigate
+                        by the sound of your environment.</p>
+                    <aside class="right bottom"><a href="http://peperbol.itch.io/blind-car-simulator" target="_blank">itch.io</a></aside>
+                </section>
+            </li>
+            <li id="jellyfish">
+                <section>
+                    <a href="http://intergalacticjellyfish.eu/" target="_blank"><img src="img/IGjellyfish.png" alt="Male with his arm into the Intergalactic Jellyfish box, smiling. With a screen displaying the inside of the box."></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Intergalactic Jellyfish</h1>
+                    <p>At <a href="http://zoomachines.com/" target="_blank">Zoomachines 2015</a>, Me and my team made a game where you put your arm in a box, and you have to feed a monster jellyfish in the other dimension! Your situation only gets worse
+                        the more you struggle.</p>
+                    <aside class="right bottom"><a href="http://intergalacticjellyfish.eu/" target="_blank">Website</a></aside>
+                </section>
 
-      </li>
-      <li id="towerfall">
-        <section>
-          <a href="https://play.google.com/store/apps/details?id=com.PepijnWillekens.Towerfall" target="_blank"><img src="img/towerfall.jpg" alt="screenshot of the android game towerfall, with the spider in the middle and title"></a>
-          <div class="tag">Game Development</div>
-          <h1>Towerfall</h1>
-          <p>I know, the name is poorly chosen, but it's a totally different game. </p>
-          <p>This was my first Android game. I made it alone in one weekend. You jump down from floor to floor without skipping one and try to reach as much floors as possible. It's quite addicting.</p>
-          <aside class="right bottom"><a href="https://play.google.com/store/apps/details?id=com.PepijnWillekens.Towerfall" target="_blank">google play store</a></aside>
-        </section>
+            </li>
+            <li id="towerfall">
+                <section>
+                    <a href="https://play.google.com/store/apps/details?id=com.PepijnWillekens.Towerfall" target="_blank"><img src="img/towerfall.jpg" alt="screenshot of the android game towerfall, with the spider in the middle and title"></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Towerfall</h1>
+                    <p>I know, the name is poorly chosen, but it's a totally different game. </p>
+                    <p>This was my first Android game. I made it alone in one weekend. You jump down from floor to floor without skipping one and try to reach as much floors as possible. It's quite addicting.</p>
+                    <aside class="right bottom"><a href="https://play.google.com/store/apps/details?id=com.PepijnWillekens.Towerfall" target="_blank">google play store</a></aside>
+                </section>
 
-      </li>
-      <li id="ggj15s">
-        <section>
-          <a href="http://globalgamejam.org/2015/games/global-game-jam-simulator-2015-0" target="_blank"><img src="img/ggjs.png" alt="screenshot of the Global Game Jam Simulator 2015, with added title."></a>
-          <div class="tag">Game Development</div>
-          <h1>Global Game Jam Simulator 2015</h1>
-          <p>This was my first gamejam. Together with <a href="http://atb.design/" target="_blank">Alexandar Barratt</a> and Anton Shumin, I made a chaotic game where you need to survive while finishing your game in time.</p>
-          <aside class="right bottom"><a href="http://globalgamejam.org/2015/games/global-game-jam-simulator-2015-0" target="_blank">game submission</a></aside>
-        </section>
+            </li>
+            <li id="ggj15s">
+                <section>
+                    <a href="http://globalgamejam.org/2015/games/global-game-jam-simulator-2015-0" target="_blank"><img src="img/ggjs.png" alt="screenshot of the Global Game Jam Simulator 2015, with added title."></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Global Game Jam Simulator 2015</h1>
+                    <p>This was my first gamejam. Together with <a href="http://atb.design/" target="_blank">Alexandar Barratt</a> and Anton Shumin, I made a chaotic game where you need to survive while finishing your game in time.</p>
+                    <aside class="right bottom"><a href="http://globalgamejam.org/2015/games/global-game-jam-simulator-2015-0" target="_blank">game submission</a></aside>
+                </section>
 
-      </li>
-      <li id="free-school-barrier">
-        <section>
-          <h1>Okay,</h1>
-          <p>So those were my free time projects. I also made a few things at school!</p>
+            </li>
+            <li id="free-school-barrier">
+                <section>
+                    <h1>Okay,</h1>
+                    <p>So those were my free time projects. I also made a few things at school!</p>
 
-          <h2><i class="fa fa-chevron-left"></i> Hobby Projects</h2>
-          <h2>School Projects <i class="fa fa-chevron-right"></i></h2>
-        </section>
-      </li>
-      <li id="3dscenestreet">
-        <section>
-          <a href="img/3dmodelscenestraatfull.jpg" target="_blank"><img src="img/3dmodelscenestraatsmall.jpg" alt="A 3D modeled street view, rainy dark, very beautifull."></a>
-          <div class="tag">3D modeling</div>
-          <h1>Poster bakerstreet</h1>
-          <p>We had a 2nd year assignment to make a poster of a fictive animation film. The assignment was about the 3D Modeling of a scene.</p>
-          <p>Made with <a href="https://www.linkedin.com/in/jarno-hermans-449922106" target="_blank">Jarno Hermans</a>, <a href="https://www.linkedin.com/in/cynthia-da-costa-706822b7" target="_blank">Cynthia Da Costa</a> and Christophe Claessens.</p>
-          <aside class="right bottom"><a href="img/3dmodelscenestraatfull.jpg" target="_blank">Full Size</a></aside>
-        </section>
-      </li>
-      <li id="lostkitten">
-        <section>
-          <a href="https://github.com/PhedraMoerloos/LostKittenBuilds" target="_blank"><img src="img/lostkitten.png" alt="menuscreen of lost kitten with drawing of a cute kitten jumping towards his mommy."></a>
-          <div class="tag">Game Development</div>
-          <h1>Lost Kitten</h1>
-          <p>Lost kitten is a first year project, made together with Phedra Moerloos and <a href="http://thesecretismine.deviantart.com/" target="_blank">Thessa Moerloos</a>. </p>
-          <p>It's a puzzle game where you have to find your way through labyrinths to reach the exit. The labyriths are different than you're used to though. The game has 5 levels to play.</p>
-          <aside class="right bottom"><a href="https://github.com/PhedraMoerloos/LostKittenBuilds" target="_blank">downloads</a></aside>
-        </section>
-      </li>
-      <li id="networkcableanim">
-        <section>
-          <iframe width="100%" height="45%" src="https://www.youtube.com/embed/HtgXWUTUY2E" frameborder="0" allowfullscreen></iframe>
-          <div class="tag">3D Animation</div>
-          <h1>3D animation
+                    <h2><i class="fa fa-chevron-left"></i> Hobby Projects</h2>
+                    <h2>School Projects <i class="fa fa-chevron-right"></i></h2>
+                </section>
+            </li>
+            <li id="3dscenestreet">
+                <section>
+                    <a href="img/3dmodelscenestraatfull.jpg" target="_blank"><img src="img/3dmodelscenestraatsmall.jpg" alt="A 3D modeled street view, rainy dark, very beautifull."></a>
+                    <div class="tag">3D modeling</div>
+                    <h1>Poster bakerstreet</h1>
+                    <p>We had a 2nd year assignment to make a poster of a fictive animation film. The assignment was about the 3D Modeling of a scene.</p>
+                    <p>Made with <a href="https://www.linkedin.com/in/jarno-hermans-449922106" target="_blank">Jarno Hermans</a>, <a href="https://www.linkedin.com/in/cynthia-da-costa-706822b7" target="_blank">Cynthia Da Costa</a> and Christophe Claessens.</p>
+                    <aside class="right bottom"><a href="img/3dmodelscenestraatfull.jpg" target="_blank">Full Size</a></aside>
+                </section>
+            </li>
+            <li id="lostkitten">
+                <section>
+                    <a href="https://github.com/PhedraMoerloos/LostKittenBuilds" target="_blank"><img src="img/lostkitten.png" alt="menuscreen of lost kitten with drawing of a cute kitten jumping towards his mommy."></a>
+                    <div class="tag">Game Development</div>
+                    <h1>Lost Kitten</h1>
+                    <p>Lost kitten is a first year project, made together with Phedra Moerloos and <a href="http://thesecretismine.deviantart.com/" target="_blank">Thessa Moerloos</a>. </p>
+                    <p>It's a puzzle game where you have to find your way through labyrinths to reach the exit. The labyriths are different than you're used to though. The game has 5 levels to play.</p>
+                    <aside class="right bottom"><a href="https://github.com/PhedraMoerloos/LostKittenBuilds" target="_blank">downloads</a></aside>
+                </section>
+            </li>
+            <li id="networkcableanim">
+                <section>
+                    <iframe width="100%" height="45%" src="https://www.youtube.com/embed/HtgXWUTUY2E" frameborder="0" allowfullscreen></iframe>
+                    <div class="tag">3D Animation</div>
+                    <h1>3D animation
             <br>How to make a network cable</h1>
-          <p>
-            Another first year assignment was to make an didactical 3D animation.
-            <br> I made an animation on how to make a network cable. It's quite compact but it looks good for a first Cinema4D project.
-          </p>
-        </section>
-      </li>
-      <li id="contact">
-        <section>
-          <h1>Contact</h1>
-          <ul>
-            <li><a href="https://twitter.com/PepijnWillekens" target="_blank"><i class="fa fa-twitter"></i><span>Twitter:</span> @PepijnWillekens</a></li>
-            <li><a href="https://www.linkedin.com/in/pepijn-willekens-588669b0" target="_blank"><i class="fa fa-linkedin-square"></i><span>LinkedIn:</span> Pepijn Willekens</a></li>
-            <li><a href="mailto:pepijnwillekens@gmail.com"><i class="fa fa-envelope"></i><span>Email:</span> pepijnwillekens@gmail.com</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100005513688932" target="_blank"><i class="fa fa-facebook"></i><span>Facebook:</span> Pepijn Willekens</a></li>
-            <li><a href="skype:willekenspepijn?userinfo"><i class="fa fa-skype"></i><span>Skype:</span> willekenspepijn</a></li>
-            <li><a href="http://steamcommunity.com/id/peperbol" target="_blank"><i class="fa fa-steam"></i><span>Steam:</span> Peperbol</a></li>
-            <li><a href="tel:+32498846421"><i class="fa fa-phone"></i><span>mobile phone:</span> +32 4 98 84 64 21</a></li>
-          </ul>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <aside>
-    <img class="myhead" src="img/me.png" alt="A drawing of Pepijn Willekens' head">
-  </aside>
-  <footer>
-    <a href="https://twitter.com/PepijnWillekens" target="_blank"><i class="fa fa-twitter" ></i><span>Twitter</span></a>
-    <button class="btn-contact"><i class="fa fa-info"></i><span class='show'>Contact</span></button>
-    <a href="PepijnWillekensResume_2016-07-14.pdf" target="_blank"><i class="fa fa-file-text"></i><span class='show'>Résumé</span></a>
-  </footer>
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+                    <p>
+                        Another first year assignment was to make an didactical 3D animation.
+                        <br> I made an animation on how to make a network cable. It's quite compact but it looks good for a first Cinema4D project.
+                    </p>
+                </section>
+            </li>
+            <li id="contact">
+                <section>
+                    <h1>Contact</h1>
+                    <ul>
+                        <li><a href="https://twitter.com/PepijnWillekens" target="_blank"><i class="fa fa-twitter"></i><span>Twitter:</span> @PepijnWillekens</a></li>
+                        <li><a href="https://www.linkedin.com/in/pepijn-willekens-588669b0" target="_blank"><i class="fa fa-linkedin-square"></i><span>LinkedIn:</span> Pepijn Willekens</a></li>
+                        <li><a href="mailto:pepijnwillekens@gmail.com"><i class="fa fa-envelope"></i><span>Email:</span> pepijnwillekens@gmail.com</a></li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100005513688932" target="_blank"><i class="fa fa-facebook"></i><span>Facebook:</span> Pepijn Willekens</a></li>
+                        <li><a href="skype:willekenspepijn?userinfo"><i class="fa fa-skype"></i><span>Skype:</span> willekenspepijn</a></li>
+                        <li><a href="http://steamcommunity.com/id/peperbol" target="_blank"><i class="fa fa-steam"></i><span>Steam:</span> Peperbol</a></li>
+                        <li><a href="tel:+32498846421"><i class="fa fa-phone"></i><span>mobile phone:</span> +32 4 98 84 64 21</a></li>
+                    </ul>
+                </section>
+            </li>
+        </ul>
+    </section>
+    <aside>
+        <img class="myhead" src="img/me.png" alt="A drawing of Pepijn Willekens' head">
+    </aside>
+    <footer>
+        <a href="https://twitter.com/PepijnWillekens" target="_blank"><i class="fa fa-twitter" ></i><span>Twitter</span></a>
+        <button class="btn-contact"><i class="fa fa-info"></i><span class='show'>Contact</span></button>
+        <a href="PepijnWillekensResume_2016-07-14.pdf" target="_blank"><i class="fa fa-file-text"></i><span class='show'>Résumé</span></a>
+    </footer>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-71819590-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+        ga('create', 'UA-71819590-1', 'auto');
+        ga('send', 'pageview');
+    </script>
 </body>
 
 </html>
